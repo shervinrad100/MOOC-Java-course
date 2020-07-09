@@ -11,7 +11,7 @@
 
 // our base package is called default package because we didn't create file paths
 
-//package (default package);
+package com.sherv.javatutorials.lesson1;
 
 public class Main {
 	public void main(String[] args) {
