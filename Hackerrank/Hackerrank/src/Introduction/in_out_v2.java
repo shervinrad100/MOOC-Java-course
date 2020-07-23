@@ -37,21 +37,35 @@ import java.util.*;
 
 public class in_out_v2 {
 	public static void main(String[] args) {
-
+		
 		Scanner scan = new Scanner(System.in);
 		/*
 		System.out.print("Int: ");
 		int i = scan.nextInt();
-		*/
+		scan.nextLine();
+		
 		System.out.print("Double: ");
 		double d = scan.nextDouble();
-		//*/
+		scan.nextLine();
+		
+		
+		*/
+		
+		// Best practice
+		int i = 0;
+		try {
+			System.out.print("Int: ");
+			i = Integer.parseInt(scan.nextLine());
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.print("String: ");
 		String s = scan.nextLine();
 		
 		System.out.println("String: " + s);
         //System.out.println("Double: " + d);
-        //System.out.println("Int: " + i);
+        System.out.println("Int: " + i);
         
         scan.close();
 	}
