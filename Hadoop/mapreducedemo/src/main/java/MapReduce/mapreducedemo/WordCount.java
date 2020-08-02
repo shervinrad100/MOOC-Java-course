@@ -1,35 +1,34 @@
-/* 
- You either need to download all org.apache packages independently for this to work 
- OR
- you can start a maven project which has Project Object Model (POM):
-  a POM is a one stop shop for everything that your project needs. So Maven looks at this before starting the
-  	tasks, gets the information it neeeds for configuration information and then executes the goal. 
-*/
+package MapReduce.mapreducedemo;
 
-package WordCount;
 
 import java.io.IOException;
+import java.lang.module.Configuration;
 import java.util.StringTokenizer;
+
+import org.apache.hadoop.fs.Path;
 //import org.apache.hadoop.mapreduce.Mapper.Context;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapred.FileInputFormat;
+import org.apache.hadoop.mapred.FileOutputFormat;
+import org.apache.hadoop.mapred.jobcontrol.Job;
 import org.apache.hadoop.mapreduce.Mapper;
-
-import MR.Context;
-import MR.Reducer;
-
+import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 
 
 
-public class MRWordCount {
-	
+
+
+
+public class WordCount {
 	public static class Map extends Mapper<LongWritable,Text,Text,IntWritable> {
 		public void map(LongWritable key, Text value, Context context) 
 					throws IOException, InterruptedException  {
 			
 			String line = value.toString();
-			StringTokenizer tokeniser = new StringTokenizer(line);
+			StringTokenizer tokenizer = new StringTokenizer(line);
 			
 			while (tokenizer.hasMoreTokens()) {
 				value.set(tokenizer.nextToken());
@@ -43,7 +42,7 @@ public class MRWordCount {
 			throws IOException, InterruptedException {
 			
 			int sum = 0;
-			for (IntWritable x; values) {
+			for (IntWritable x: values) {
 				sum += x.get();
 			}
 			
