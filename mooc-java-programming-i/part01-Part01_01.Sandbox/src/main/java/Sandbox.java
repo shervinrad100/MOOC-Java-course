@@ -21,6 +21,15 @@ public class Sandbox {
         System.out.println("input your message here: "); String message = scan.nextLine();
         System.out.println(message);
         
-        // 
+        // conversion of string to int
+        int num = Integer.valueOf("2") ;
+        
+        // double result of two integers in an operation
+        int first_num = 3;
+        int second_num = 2;
+        System.out.println(first_num/second_num); // 1
+        System.out.println(first_num/second_num*1.0); //1.0
+        System.out.println(first_num/(second_num*1.0)); //1.5
+        System.out.println((double) first_num/second_num); //1.5
     }
 }
