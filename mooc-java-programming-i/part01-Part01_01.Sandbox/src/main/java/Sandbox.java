@@ -31,5 +31,13 @@ public class Sandbox {
         System.out.println(first_num/second_num*1.0); //1.0
         System.out.println(first_num/(second_num*1.0)); //1.5
         System.out.println((double) first_num/second_num); //1.5
+        
+        Scanner testScan = new Scanner("[1,2,3]").useDelimiter(",");
+        while (testScan.hasNext()) {
+            if (testScan.hasNextInt()) {
+                
+            }
+        }
+        
     }
 }

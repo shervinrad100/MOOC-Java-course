@@ -13,9 +13,9 @@ public class FirstAndLast {
             if (input.equals("")) {
                 break;
             }
-
             list.add(input);
         }
-
+        System.out.println(list.get(0));
+        System.out.println(list.get(list.size()-1));
     }
 }

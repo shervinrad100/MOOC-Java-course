@@ -13,9 +13,18 @@ public class RememberTheseNumbers {
             if (luku == -1) {
                 break;
             }
-
             numbers.add(luku);
         }
-
+        for (int num : numbers) {
+            System.out.println(num);
+        }
+        
+        /*
+        numbers.forEach((Integer num) -> {
+            System.out.println(num);
+        });
+        */
+        
     }
 }
+        
