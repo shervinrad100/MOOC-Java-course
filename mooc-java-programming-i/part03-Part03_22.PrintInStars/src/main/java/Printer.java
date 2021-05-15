@@ -8,7 +8,16 @@ public class Printer {
     }
 
     public static void printArrayInStars(int[] array) {
-        // Write some code in here
+        for (int numberOfStars : array) {
+        //    System.out.println("*".repeat(numberOfStars));
+            int i = 0;
+            String str = "";
+            while (i<numberOfStars) {
+                str += "*" ;
+                i++ ;
+            }
+            System.out.println(str);
+        }
     }
 
 }
