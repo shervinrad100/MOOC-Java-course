@@ -13,6 +13,9 @@ import java.util.Scanner;
 public class Sandbox {
 
     public static void main(String[] args) {
+    
+        /*
+
         // print *sout tab*
         System.out.println("message");
         
@@ -39,5 +42,9 @@ public class Sandbox {
             }
         }
         
+        */
+        
+        String str = "" ;
+        System.out.println(str.isEmpty());
     }
 }
