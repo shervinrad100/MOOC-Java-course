@@ -1,6 +1,8 @@
-# Part 1 - Printing, reading input, variables, calculating with numbers, conditional statements
+# List of exercises
 
-# Part 2 - loops
+### Part 1 - Printing, reading input, variables, calculating with numbers, conditional statements
+
+### Part 2 - loops
 
 1. Write a program that reads an integer from the user and prints the square of the given integer, i.e. the integer multiplied by itself.
 
@@ -70,7 +72,7 @@
 
 34. Define a method called printSpaces(int number) that produces the number of spaces specified by number. The method does not print the line break. You will also have to either copy the printStars method your previous answer or reimplement it in this exercise template. Create a method called printTriangle(int size) that uses printSpaces and printStars to print the correct triangle. Define a method called christmasTree(int height) that prints the correct Christmas tree. The Christmas tree consists of a triangle with the specified height as well as the base. The base is two stars high and three stars wide, and is placed at the center of the triangle's bottom. The tree is to be constructed by using the methods printSpaces and printStars. 
 
-# Part 3 - lists, arrays, strigns
+### Part 3 - lists, arrays, strigns
 
 1. modify the program so that instead of the first value, the third value on the list is printed. Remember that programmers start counting from zero! The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all.
 
@@ -136,7 +138,7 @@
 
 32. Write a program that reads names and birth years from the user until an empty line is entered. The name and birth year are separated by a comma. After that the program prints the longest name and the average of the birth years. If multiple names are equally longest, you can print any of them. You can assume that the user enters at least one person.
   
-# Part 4 - objects in lists, files and reading data
+### Part 4 - objects in lists, files and reading data
 
 1. The exercise template comes with a ready-made class named Account. The Account object represents a bank account that has balance (i.e. one that has some amount of money in it). 
 
@@ -201,6 +203,6 @@
 31. In this exercise, we'll be working with files stored in CSV format. Each line of the file contains the home team, visiting team, home team points, and visiting team points, all separated by commas. Write a program that prompts the user for a filename, after which it reads the match statistics from the file. The program then prompts the user for the name of a team, and prints the data specified in the following parts for that team. Extend the program so that it has the ability to print the number of wins and losses of a given team. The winner of a game is the team that has gained more points from it.
 
 
-# Part 5 - primitive and reference variables, functions
-# Part 6 - testing, backend
-# Part 7 - algorithms
+### Part 5 - primitive and reference variables, functions
+### Part 6 - testing, backend
+### Part 7 - algorithms
